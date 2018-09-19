@@ -1,0 +1,22 @@
+server:
+  servlet:
+    context-path:  /admin
+  port: 8080
+
+
+#druid
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/springboot-admin?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password:
+
+
+#mybatis
+mybatis:
+  mapper-locations: classpath:mapper/**/*Mapper.xml
+  type-aliases-package: io.vubh.entity
+
+
